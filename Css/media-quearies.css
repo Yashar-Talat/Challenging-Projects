@@ -1,4 +1,13 @@
-@media (min-width : 576px) {}
-@media (min-width : 776px) {}
-@media (min-width : 992px) {}
-@media (min-width : 1200px) {}
+@media (min-width: 576px) {
+}
+@media (min-width: 776px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1250px) {
+  .container {
+    width: 5000px;
+  }
+}
+
+
