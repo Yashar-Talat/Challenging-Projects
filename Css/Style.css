@@ -282,20 +282,21 @@ main {
   border-radius: 10px;
 }
 .content__btx2 {
-    border: 1px solid #f9f9f9;
-    padding: 17px 20px 17px 20px;
-    font-size: 1.5rem;
-    border-radius: 10px;
-    margin-left: 20px;
+  border: 1px solid #f9f9f9;
+  padding: 17px 20px 17px 20px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  margin-left: 20px;
 }
-.fa-play,.fa-plus {
-    margin-left: 6px;
+.fa-play,
+.fa-plus {
+  margin-left: 6px;
 }
 #play {
-    color: black;
-} 
+  color: black;
+}
 #info {
-color: #f9f9f9;
+  color: #f9f9f9;
 }
 /* .content {
   color: #f9f9f9;
