@@ -6,6 +6,8 @@
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Times New Roman", Times, serif !important;
@@ -20,17 +22,19 @@ li {
   display: flex;
 }
 header {
-  background-color: #1a1c1e !important;
+    justify-content: center;
 }
 .container__menu {
   justify-content: space-between;
   font-size: 1.5rem;
   font-weight: 400;
-  padding: 25px 0;
-  width: 100%;
-  margin: auto;
+  position: relative;
+  /* width: 100%; */
+  background-color: #1a1c1e !important;
 }
 .menu {
+  background-color: #1a1c1e !important;
+  padding: 25px 0;
   width: 650px;
   justify-content: space-between;
   align-items: center;
@@ -95,6 +99,7 @@ path:nth-child(6) {
 .icon__search {
   align-items: center;
   justify-content: center;
+  margin-right: 15px;
 }
 #search__box {
   background-color: black;
@@ -103,6 +108,7 @@ path:nth-child(6) {
   border: 0;
   outline: 0;
   border-radius: 5px;
+
 }
 #search__box::placeholder {
   color: white;
@@ -116,12 +122,14 @@ path:nth-child(6) {
   left: 30px;
 }
 .right__notif {
+  background-color: #1a1c1e !important;
   width: 150px;
+  padding: 25px 0;
   align-items: center;
   justify-content: flex-end;
   color: white;
   margin-right: 10px;
-  margin-left: 20px !important;
+  /* margin-left: 20px !important; */
 }
 .Exit__box {
   justify-content: center;
@@ -160,4 +168,41 @@ path:nth-child(6) {
 .fa-bell:hover {
   color: chartreuse;
   transform: translateY(-2px);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #1a1c1e !important;
+  justify-content: flex-start !important;
+  width: 300px !important;
+}
+.topnav #myLinks {
+  display: none;
+}
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  font-size: 1.7rem;
+  display: block;
+}
+.topnav i {
+  color: white;
+  padding: 14px 16px;
+  font-size: 1.7rem;
+  display: block;
+}
+.topnav a:hover {
+  background-color: black;
+  color: white !important; 
+}
+.menu__list {
+    flex-direction: column;
+}
+.menu__list li a{
+    display:flex;
+    align-items: center;
+    padding: 5px 150px 5px 2px;
+}
+.menu__list i {
+    padding-right: 1.5rem;
 }
