@@ -7,7 +7,6 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 body {
   font-family: "Times New Roman", Times, serif !important;
@@ -22,14 +21,13 @@ li {
   display: flex;
 }
 header {
-    justify-content: center;
+  justify-content: center;
 }
 .container__menu {
   justify-content: space-between;
   font-size: 1.5rem;
   font-weight: 400;
   position: relative;
-  /* width: 100%; */
   background-color: #1a1c1e !important;
 }
 .menu {
@@ -48,7 +46,10 @@ header {
 }
 svg {
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: black;
+  border-radius: 100%;
 }
+
 .active svg {
   transform: rotate(90deg);
 }
@@ -108,7 +109,6 @@ path:nth-child(6) {
   border: 0;
   outline: 0;
   border-radius: 5px;
-
 }
 #search__box::placeholder {
   color: white;
@@ -129,7 +129,6 @@ path:nth-child(6) {
   justify-content: flex-end;
   color: white;
   margin-right: 10px;
-  /* margin-left: 20px !important; */
 }
 .Exit__box {
   justify-content: center;
@@ -178,6 +177,7 @@ path:nth-child(6) {
 }
 .topnav #myLinks {
   display: none;
+  margin-bottom: 1px;
 }
 .topnav a {
   color: white;
@@ -193,16 +193,50 @@ path:nth-child(6) {
 }
 .topnav a:hover {
   background-color: black;
-  color: white !important; 
+  color: white !important;
 }
 .menu__list {
-    flex-direction: column;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(151, 149, 149);
 }
-.menu__list li a{
-    display:flex;
-    align-items: center;
-    padding: 5px 150px 5px 2px;
+.menu__list li a {
+  display: flex;
+  align-items: center;
+  padding: 5px 150px 5px 2px;
 }
 .menu__list i {
-    padding-right: 1.5rem;
+  padding-right: 1.5rem;
+}
+.profile__contanier {
+  align-items: center;
+  margin-left: 18px;
+  margin-bottom: 35px;
+}
+.profile__contanier img {
+  margin-right: 20px;
+  transition: 0.3s;
+}
+.profile__contanier img:hover {
+  transform: translateX(5px);
+}
+.profile__contanier p {
+  color: #ffffff;
+  font-size: 1.7rem;
+}
+#user-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+.menu__footer li a {
+  display: flex;
+  align-items: center;
+  padding: 20px 190px 20px 18px; 
+  font-size: 1.2rem;
+  color: darkgrey !important;
+}
+.menu__footer a h4 {
+    font-size: 1.5rem !important;
+    color: #F9F9F9;
 }
